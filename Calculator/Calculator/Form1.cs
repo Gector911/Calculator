@@ -30,6 +30,7 @@ namespace Calculator
         private void button2_Click(object sender, EventArgs e)
         {
 
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -47,6 +48,20 @@ namespace Calculator
             firstArgument = Convert.ToDouble(textBox1.Text);
             secondArgument = Convert.ToDouble(textBox2.Text);
             textBox3.Text = (firstArgument / secondArgument).ToString();
+
+            double first_argument, second_argument;
+            first_argument = Convert.ToDouble(textBox1.Text);
+            second_argument = Convert.ToDouble(textBox2.Text);
+            textBox3.Text = (first_argument + second_argument).ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double first_argument, second_argument;
+            first_argument = Convert.ToDouble(textBox1.Text);
+            second_argument = Convert.ToDouble(textBox2.Text);
+            textBox3.Text = (first_argument - second_argument).ToString();
+
         }
     }
 }
