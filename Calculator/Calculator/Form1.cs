@@ -32,6 +32,20 @@ namespace Calculator
             textBox3.Text = result.ToString();
 
         }
+        public void Definition2(object sender, EventArgs e)
+        {
+            double firstArgument;
+  
+            double result;
+
+            firstArgument = Convert.ToDouble(textBox1.Text);
+       
+
+            var calc = AdditionalFactory.CreateAdditionalCalculator(((Button)sender).Name);
+            result = calc.Calculate(firstArgument);
+            textBox3.Text = result.ToString();
+
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -62,6 +76,41 @@ namespace Calculator
         {
 
             Definition(sender, e);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
         }
     }
 }
