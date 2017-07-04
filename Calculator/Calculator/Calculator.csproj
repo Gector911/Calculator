@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Addition.cs" />
+    <Compile Include="CalculatorsFactory.cs" />
     <Compile Include="ICalculator.cs" />
     <Compile Include="Division.cs" />
     <Compile Include="Form1.cs">
