@@ -45,6 +45,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // textBox1
@@ -111,7 +113,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Location = new System.Drawing.Point(111, 147);
+            this.button1.Location = new System.Drawing.Point(111, 181);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 7;
@@ -122,7 +124,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.Location = new System.Drawing.Point(12, 147);
+            this.button2.Location = new System.Drawing.Point(12, 181);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 8;
@@ -133,7 +135,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button3.Location = new System.Drawing.Point(12, 176);
+            this.button3.Location = new System.Drawing.Point(12, 210);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 9;
@@ -144,7 +146,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button4.Location = new System.Drawing.Point(111, 176);
+            this.button4.Location = new System.Drawing.Point(111, 210);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 10;
@@ -155,7 +157,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Coral;
-            this.button5.Location = new System.Drawing.Point(12, 205);
+            this.button5.Location = new System.Drawing.Point(12, 239);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 11;
@@ -166,7 +168,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Coral;
-            this.button6.Location = new System.Drawing.Point(111, 205);
+            this.button6.Location = new System.Drawing.Point(111, 239);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 12;
@@ -177,7 +179,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Coral;
-            this.button7.Location = new System.Drawing.Point(12, 234);
+            this.button7.Location = new System.Drawing.Point(12, 268);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 13;
@@ -188,7 +190,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Coral;
-            this.button8.Location = new System.Drawing.Point(111, 234);
+            this.button8.Location = new System.Drawing.Point(111, 268);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 14;
@@ -199,7 +201,7 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Aquamarine;
-            this.button9.Location = new System.Drawing.Point(12, 263);
+            this.button9.Location = new System.Drawing.Point(12, 297);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 15;
@@ -210,7 +212,7 @@
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.Aquamarine;
-            this.button10.Location = new System.Drawing.Point(111, 263);
+            this.button10.Location = new System.Drawing.Point(111, 297);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 16;
@@ -218,12 +220,38 @@
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(26, 150);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(40, 17);
+            this.radioButton1.TabIndex = 17;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "rad";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(123, 150);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(43, 17);
+            this.radioButton2.TabIndex = 18;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "deg";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(237, 295);
+            this.ClientSize = new System.Drawing.Size(260, 346);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -268,6 +296,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
 

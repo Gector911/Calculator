@@ -35,11 +35,16 @@ namespace Calculator
         public void Definition2(object sender, EventArgs e)
         {
             double firstArgument;
-  
             double result;
 
             firstArgument = Convert.ToDouble(textBox1.Text);
-       
+
+            
+             if (radioButton2.Checked && ((Button)sender).Name != "button10"
+                                      && ((Button)sender).Name != "button9")
+            {
+                firstArgument = firstArgument * Math.PI  / 180;
+            }
 
             var calc = AdditionalFactory.CreateAdditionalCalculator(((Button)sender).Name);
             result = calc.Calculate(firstArgument);
@@ -111,6 +116,11 @@ namespace Calculator
         private void button10_Click(object sender, EventArgs e)
         {
             Definition2(sender, e);
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
