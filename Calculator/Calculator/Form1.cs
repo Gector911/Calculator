@@ -29,15 +29,15 @@ namespace Calculator
 
             switch (((Button)sender).Name)
             {
-                case "button1":
+                case "Subtraction":
                     result = firstArgument - secondArgument;
                     break;
 
-                case "button2":
+                case "Addition":
                     result = firstArgument + secondArgument;
                     break;
 
-                case "button3":
+                case "Division":
                     result = firstArgument * secondArgument;
                     break;
                 case "button4":
