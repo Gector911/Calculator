@@ -38,6 +38,10 @@ namespace Calculator
                     return new tgh();
                 case "sqrt":
                     return new sqrt();
+                case "decad":
+                    return new decad();
+                case "exponent":
+                    return new exponent();
                 default:
                     throw new Exception("unknown operation");
             }

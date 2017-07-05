@@ -15,6 +15,16 @@ namespace Calculator.Tests
         [TestCase("ctg", typeof(ctg))]
         [TestCase("lg", typeof(lg))]
         [TestCase("ln", typeof(ln))]
+        [TestCase("arcsin", typeof(arcsin))]
+        [TestCase("arccos", typeof(arccos))]
+        [TestCase("arctg", typeof(arctg))]
+        [TestCase("sinh", typeof(sinh))]
+        [TestCase("cosh", typeof(cosh))]
+        [TestCase("tgh", typeof(tgh))]
+        [TestCase("decad", typeof(decad))]
+        [TestCase("sqrt", typeof(sqrt))]
+        [TestCase("exponent", typeof(exponent))]
+
         public void CalculateTest(string name, Type type)
         {
             var calculator = AdditionalFactory.CreateAdditionalCalculator(name);

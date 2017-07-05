@@ -18,13 +18,24 @@ namespace Calculator
         }
         public void Definition(object sender, EventArgs e)
         {
+
+
             double firstArgument;
             double secondArgument;
             double result;
 
             firstArgument = Convert.ToDouble(textBox1.Text);
             secondArgument = Convert.ToDouble(textBox2.Text);
-
+            try
+            {
+                var calcException = CalculatorsFactory.CreateCalculator("Division");
+                double wrongRes = calcException.Calculate(firstArgument, secondArgument);
+            }
+            catch (ArgumentNullException exc)
+            {
+                MessageBox.Show("ERROR", "Division by zero!", MessageBoxButtons.YesNo);
+            }
+          
             var calc = CalculatorsFactory.CreateCalculator(((Button)sender).Name);
             result = calc.Calculate(firstArgument, secondArgument);
             textBox3.Text = result.ToString();
@@ -37,9 +48,45 @@ namespace Calculator
 
             firstArgument = Convert.ToDouble(textBox1.Text);
 
+            try
+            {
+                var calcException = AdditionalFactory.CreateAdditionalCalculator("lg");
+                double wrongRes = calcException.Calculate(firstArgument);
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Logarithm expression <= 0", "ERROR", MessageBoxButtons.YesNo);
 
-            if (degrees.Checked && ((Button)sender).Name != "button10"
-                                     && ((Button)sender).Name != "button9")
+            }
+
+            try
+            {
+                var calcException = AdditionalFactory.CreateAdditionalCalculator("ln");
+                double wrongRes = calcException.Calculate(firstArgument);
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Logarithm expression <= 0", "ERROR", MessageBoxButtons.YesNo);
+               
+            }
+            try
+            {
+                var calcException = AdditionalFactory.CreateAdditionalCalculator("sqrt");
+                double wrongRes = calcException.Calculate(firstArgument);
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("sqrt expression < 0", "ERROR", MessageBoxButtons.YesNo);
+
+            }
+
+
+
+
+            if (degrees.Checked && (((Button)sender).Name == "sin"
+                                     || ((Button)sender).Name == "cos"
+                                     || ((Button)sender).Name == "tg"
+                                     || ((Button)sender).Name == "ctg"))
             {
                 firstArgument = firstArgument * Math.PI / 180;
             }
@@ -47,6 +94,7 @@ namespace Calculator
             var calc = AdditionalFactory.CreateAdditionalCalculator(((Button)sender).Name);
             result = calc.Calculate(firstArgument);
             textBox3.Text = result.ToString();
+
 
         }
         private void min_Click(object sender, EventArgs e)

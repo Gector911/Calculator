@@ -10,7 +10,12 @@ namespace Calculator
     {
         public double Calculate(double firstArgument)
         {
+            if (firstArgument <= 0)
+            {
+                throw new Exception("logarithm expression <=0");
+            }
             return (Math.Log10(firstArgument));
+
         }
     }
 }

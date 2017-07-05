@@ -13,6 +13,10 @@ namespace Calculator.Tests
         [TestCase("Subtraction", typeof(Subtraction))]
         [TestCase("Multiplication", typeof(Multiplication))]
         [TestCase("Division", typeof(Division))]
+        [TestCase("power", typeof(power))]
+        [TestCase("min", typeof(min))]
+        [TestCase("max", typeof(max))]
+
         public void CalculateTest(string name, Type type)
         {
             var calculator = CalculatorsFactory.CreateCalculator(name);

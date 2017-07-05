@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator.One_Argument
+namespace Calculator
 {
     public class decad : CalcForOneArgument
     {

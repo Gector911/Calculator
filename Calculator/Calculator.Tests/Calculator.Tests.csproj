@@ -47,11 +47,15 @@
     <Compile Include="AdditionTest.cs" />
     <Compile Include="CalculatorsFactoryTest.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="cosTest.cs" />
     <Compile Include="DivisionTest.cs" />
+    <Compile Include="lgTest.cs" />
     <Compile Include="MultiplicationTest.cs" />
-    <Compile Include="sinExtendedTest.cs" />
+    <Compile Include="powerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sinTest.cs" />
     <Compile Include="SubtructionTest.cs" />
+    <Compile Include="tgTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calculator\Calculator.csproj">

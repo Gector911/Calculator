@@ -7,14 +7,14 @@ using NUnit.Framework;
 
 namespace Calculator.Tests
 {
-    class sinExtendedTest
+    class lgTest
     {
-        [TestCase(0, 0)]
-        [TestCase(Math.PI/2, 1)]
-        
+        [TestCase(100000, 5)]
+        [TestCase(10, 1)]
+        [TestCase(1, 0)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calc = new sin();
+            var calc = new lg();
             var actual = calc.Calculate(firstValue);
             Assert.AreEqual(expected, actual);
         }

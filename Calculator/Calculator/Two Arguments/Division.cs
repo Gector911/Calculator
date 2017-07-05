@@ -12,7 +12,7 @@ namespace Calculator
         {
             if (secondArgument == 0)
             {
-                throw new Exception("Division by zero");
+                throw new ArgumentNullException("Division by zero");
             }
             return (firstArgument / secondArgument);
         }

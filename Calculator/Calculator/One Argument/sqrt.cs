@@ -10,6 +10,10 @@ namespace Calculator
     {
         public double Calculate(double firstArgument)
         {
+            if (firstArgument < 0)
+            {
+                throw new Exception("sqrt expression < 0");
+            }
             return (Math.Sqrt(firstArgument));
         }
     }

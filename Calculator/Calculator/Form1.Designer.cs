@@ -327,6 +327,7 @@
             // 
             this.radians.AutoSize = true;
             this.radians.BackColor = System.Drawing.Color.PowderBlue;
+            this.radians.Checked = true;
             this.radians.Location = new System.Drawing.Point(278, 134);
             this.radians.Name = "radians";
             this.radians.Size = new System.Drawing.Size(40, 17);
@@ -343,7 +344,6 @@
             this.degrees.Name = "degrees";
             this.degrees.Size = new System.Drawing.Size(43, 17);
             this.degrees.TabIndex = 26;
-            this.degrees.TabStop = true;
             this.degrees.Text = "deg";
             this.degrees.UseVisualStyleBackColor = false;
             // 
