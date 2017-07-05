@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    interface ICalculator
+  public   interface ICalculator
     {
         double Calculate(double firstArgument, double secondArgument);
     }

@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    static class CalculatorsFactory
+  public  static class CalculatorsFactory
     {
         public static ICalculator CreateCalculator(string calcName)
         {
             
             switch (calcName)
             {
-                case "button1":
+                case "Subtraction":
                     return new Subtraction();
-                case "button2":
+                case "Addition":
                     return new Addition();
-                case "button3":
+                case "Multiplication":
                     return new Multiplication();
-                case "button4":
+                case "Division":
                     return new Division();
                 default:
                     throw new Exception("unknown operation");

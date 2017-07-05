@@ -8,36 +8,10 @@ using System.Threading.Tasks;
 namespace Calculator.Tests
 {
     [TestFixture]
-    public class SubtractionTests
+    public class prob
     {
-        [Test]
-        public void SubtractionTest()
-        {
-            var calc = new Subtraction();
-            var actual = calc.Calculate(5, 4);
-            Assert.AreEqual(1,actual);
-        }
-        [Test]
-        public void AdditionTest()
-        {
-            var calc = new Addition();
-            var actual = calc.Calculate(245, 45);
-            Assert.AreEqual(290, actual);
-        }
-        [Test]
-        public void MultiplicationTest()
-        {
-            var calc = new Multiplication();
-            var actual = calc.Calculate(60, 70);
-            Assert.AreEqual(4200, actual);
-        }
-        [Test]
-        public void DivisionTest()
-        {
-            var calc = new Division();
-            var actual = calc.Calculate(450, 45);
-            Assert.AreEqual(10, actual);
-        }
+
+
         [Test]
         public void sinTest()
         {
