@@ -18,7 +18,10 @@ namespace Calculator.Tests
             var calculator = CalculatorsFactory.CreateCalculator(name);
             Assert.IsInstanceOf(type, calculator);
         }
- 
+        public void Exception()
+        {
+            Assert.Throws<Exception>(() => CalculatorsFactory.CreateCalculator("Wrong operation"));
+        }
 
     }
 }

@@ -21,6 +21,12 @@ namespace Calculator
                     return new Multiplication();
                 case "Division":
                     return new Division();
+                case "power":
+                    return new power();
+                case "min":
+                    return new min();
+                case "max":
+                    return new max();
                 default:
                     throw new Exception("unknown operation");
             }

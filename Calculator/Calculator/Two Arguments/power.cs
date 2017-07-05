@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-   public class Division : ICalculator
+    public class power : ICalculator
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            if (secondArgument == 0)
-            {
-                throw new Exception("Division by zero");
-            }
-            return (firstArgument / secondArgument);
+            return (Math.Pow(firstArgument, secondArgument));
         }
     }
 }

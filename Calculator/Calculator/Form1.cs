@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +16,6 @@ namespace Calculator
         {
             InitializeComponent();
         }
-
         public void Definition(object sender, EventArgs e)
         {
             double firstArgument;
@@ -39,11 +37,11 @@ namespace Calculator
 
             firstArgument = Convert.ToDouble(textBox1.Text);
 
-            
-             if (radioButton2.Checked && ((Button)sender).Name != "button10"
-                                      && ((Button)sender).Name != "button9")
+
+            if (degrees.Checked && ((Button)sender).Name != "button10"
+                                     && ((Button)sender).Name != "button9")
             {
-                firstArgument = firstArgument * Math.PI  / 180;
+                firstArgument = firstArgument * Math.PI / 180;
             }
 
             var calc = AdditionalFactory.CreateAdditionalCalculator(((Button)sender).Name);
@@ -51,76 +49,114 @@ namespace Calculator
             textBox3.Text = result.ToString();
 
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void min_Click(object sender, EventArgs e)
         {
             Definition(sender, e);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Subtruction_Click(object sender, EventArgs e)
         {
             Definition(sender, e);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Addition_Click(object sender, EventArgs e)
         {
             Definition(sender, e);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Multiplication_Click(object sender, EventArgs e)
         {
-
             Definition(sender, e);
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Division_Click(object sender, EventArgs e)
+        {
+            Definition(sender, e);
+        }
+
+        private void power_Click(object sender, EventArgs e)
+        {
+            Definition(sender, e);
+        }
+
+        private void max_Click(object sender, EventArgs e)
+        {
+            Definition(sender, e);
+        }
+
+        private void sqrt_Click(object sender, EventArgs e)
         {
             Definition2(sender, e);
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void sin_Click(object sender, EventArgs e)
         {
             Definition2(sender, e);
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void cos_Click(object sender, EventArgs e)
         {
             Definition2(sender, e);
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void sinh_Click(object sender, EventArgs e)
         {
             Definition2(sender, e);
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
+        private void tg_Click(object sender, EventArgs e)
         {
             Definition2(sender, e);
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void ctg_Click(object sender, EventArgs e)
         {
             Definition2(sender, e);
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void cosh_Click(object sender, EventArgs e)
         {
+            Definition2(sender, e);
+        }
 
+        private void arcsin_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void arccos_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void tgh_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void arctg_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void lg_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void ln_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void exponent_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
+        }
+
+        private void decad_Click(object sender, EventArgs e)
+        {
+            Definition2(sender, e);
         }
     }
 }

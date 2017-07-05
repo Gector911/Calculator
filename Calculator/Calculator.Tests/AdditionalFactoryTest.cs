@@ -21,7 +21,12 @@ namespace Calculator.Tests
             Assert.IsInstanceOf(type, calculator);
 
         }
-    
+
+        public void Exception()
+
+        {
+            Assert.Throws<Exception>(() => AdditionalFactory.CreateAdditionalCalculator("Wrong operation"));
+        }
 
 
     }

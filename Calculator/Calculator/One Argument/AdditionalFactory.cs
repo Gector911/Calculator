@@ -24,6 +24,20 @@ namespace Calculator
                     return new lg();
                 case "ln":
                     return new ln();
+                case "arcsin":
+                    return new arcsin();
+                case "arccos":
+                    return new arccos();
+                case "arctg":
+                    return new arctg();
+                case "sinh":
+                    return new sinh();
+                case "cosh":
+                    return new cosh();
+                case "tgh":
+                    return new tgh();
+                case "sqrt":
+                    return new sqrt();
                 default:
                     throw new Exception("unknown operation");
             }
