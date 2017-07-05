@@ -12,17 +12,17 @@ namespace Calculator
         {
             switch (calcName)
             {
-                case "button5":
+                case "sin":
                     return new sin();
-                case "button6":
+                case "cos":
                     return new cos();
-                case "button7":
+                case "tg":
                     return new tg();
-                case "button8":
+                case "ctg":
                     return new ctg();
-                case "button9":
+                case "lg":
                     return new lg();
-                case "button10":
+                case "ln":
                     return new ln();
                 default:
                     throw new Exception("unknown operation");

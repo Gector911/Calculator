@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdditionalFactoryTest.cs" />
     <Compile Include="AdditionTest.cs" />
+    <Compile Include="CalculatorsFactoryTest.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DivisionTest.cs" />
     <Compile Include="MultiplicationTest.cs" />
