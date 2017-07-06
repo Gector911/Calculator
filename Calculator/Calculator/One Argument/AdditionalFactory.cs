@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.One_Argument
 {
+    /// <summary>
+    /// This class creates new calculator for one argument
+    /// </summary>
    public static class AdditionalFactory
     {
                public static CalcForOneArgument CreateAdditionalCalculator(string calcName)
@@ -48,4 +47,5 @@ namespace Calculator
 
         }
     }
+
 }

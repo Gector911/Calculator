@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Calculator.Two_Arguments;
 using NUnit.Framework;
 
 namespace Calculator.Tests

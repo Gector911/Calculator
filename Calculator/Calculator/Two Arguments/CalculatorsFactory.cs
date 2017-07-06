@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.Two_Arguments
 {
-  public  static class CalculatorsFactory
+    /// <summary>
+    /// This class creates new calculator for two argument
+    /// </summary>
+    public static class CalculatorsFactory
     {
         public static ICalculator CreateCalculator(string calcName)
         {
