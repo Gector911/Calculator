@@ -90,7 +90,7 @@
             this.Subtruction.TabIndex = 3;
             this.Subtruction.Text = "-";
             this.Subtruction.UseVisualStyleBackColor = false;
-            this.Subtruction.Click += new System.EventHandler(this.Subtruction_Click);
+            this.Subtruction.Click += new System.EventHandler(this.Definition);
             // 
             // Addition
             // 
@@ -101,7 +101,7 @@
             this.Addition.TabIndex = 4;
             this.Addition.Text = "+";
             this.Addition.UseVisualStyleBackColor = false;
-            this.Addition.Click += new System.EventHandler(this.Addition_Click);
+            this.Addition.Click += new System.EventHandler(this.Definition);
             // 
             // Multiplication
             // 
@@ -112,7 +112,7 @@
             this.Multiplication.TabIndex = 5;
             this.Multiplication.Text = "*";
             this.Multiplication.UseVisualStyleBackColor = false;
-            this.Multiplication.Click += new System.EventHandler(this.Multiplication_Click);
+            this.Multiplication.Click += new System.EventHandler(this.Definition);
             // 
             // Division
             // 
@@ -123,7 +123,7 @@
             this.Division.TabIndex = 6;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = false;
-            this.Division.Click += new System.EventHandler(this.Division_Click);
+            this.Division.Click += new System.EventHandler(this.Definition);
             // 
             // sin
             // 
@@ -134,7 +134,7 @@
             this.sin.TabIndex = 7;
             this.sin.Text = "sin(x)";
             this.sin.UseVisualStyleBackColor = false;
-            this.sin.Click += new System.EventHandler(this.sin_Click);
+            this.sin.Click += new System.EventHandler(this.Definition2);
             // 
             // cos
             // 
@@ -145,7 +145,7 @@
             this.cos.TabIndex = 8;
             this.cos.Text = "cos(x)";
             this.cos.UseVisualStyleBackColor = false;
-            this.cos.Click += new System.EventHandler(this.cos_Click);
+            this.cos.Click += new System.EventHandler(this.Definition2);
             // 
             // tg
             // 
@@ -156,7 +156,7 @@
             this.tg.TabIndex = 9;
             this.tg.Text = "tg(x)";
             this.tg.UseVisualStyleBackColor = false;
-            this.tg.Click += new System.EventHandler(this.tg_Click);
+            this.tg.Click += new System.EventHandler(this.Definition2);
             // 
             // ctg
             // 
@@ -167,7 +167,7 @@
             this.ctg.TabIndex = 10;
             this.ctg.Text = "ctg(x)";
             this.ctg.UseVisualStyleBackColor = false;
-            this.ctg.Click += new System.EventHandler(this.ctg_Click);
+            this.ctg.Click += new System.EventHandler(this.Definition2);
             // 
             // lg
             // 
@@ -178,7 +178,7 @@
             this.lg.TabIndex = 11;
             this.lg.Text = "lg(x)";
             this.lg.UseVisualStyleBackColor = false;
-            this.lg.Click += new System.EventHandler(this.lg_Click);
+            this.lg.Click += new System.EventHandler(this.Definition2);
             // 
             // ln
             // 
@@ -189,7 +189,7 @@
             this.ln.TabIndex = 12;
             this.ln.Text = "ln(x)";
             this.ln.UseVisualStyleBackColor = false;
-            this.ln.Click += new System.EventHandler(this.ln_Click);
+            this.ln.Click += new System.EventHandler(this.Definition2);
             // 
             // arcsin
             // 
@@ -200,7 +200,7 @@
             this.arcsin.TabIndex = 13;
             this.arcsin.Text = "arcsin(x)";
             this.arcsin.UseVisualStyleBackColor = false;
-            this.arcsin.Click += new System.EventHandler(this.arcsin_Click);
+            this.arcsin.Click += new System.EventHandler(this.Definition2);
             // 
             // arccos
             // 
@@ -211,7 +211,7 @@
             this.arccos.TabIndex = 14;
             this.arccos.Text = "arccos(x)";
             this.arccos.UseVisualStyleBackColor = false;
-            this.arccos.Click += new System.EventHandler(this.arccos_Click);
+            this.arccos.Click += new System.EventHandler(this.Definition2);
             // 
             // arctg
             // 
@@ -222,7 +222,7 @@
             this.arctg.TabIndex = 15;
             this.arctg.Text = "arctg(x)";
             this.arctg.UseVisualStyleBackColor = false;
-            this.arctg.Click += new System.EventHandler(this.arctg_Click);
+            this.arctg.Click += new System.EventHandler(this.Definition2);
             // 
             // sqrt
             // 
@@ -233,7 +233,7 @@
             this.sqrt.TabIndex = 16;
             this.sqrt.Text = "√";
             this.sqrt.UseVisualStyleBackColor = false;
-            this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
+            this.sqrt.Click += new System.EventHandler(this.Definition2);
             // 
             // power
             // 
@@ -244,7 +244,7 @@
             this.power.TabIndex = 17;
             this.power.Text = "x^y";
             this.power.UseVisualStyleBackColor = false;
-            this.power.Click += new System.EventHandler(this.power_Click);
+            this.power.Click += new System.EventHandler(this.Definition);
             // 
             // sinh
             // 
@@ -255,7 +255,7 @@
             this.sinh.TabIndex = 18;
             this.sinh.Text = "sinh(x)";
             this.sinh.UseVisualStyleBackColor = false;
-            this.sinh.Click += new System.EventHandler(this.sinh_Click);
+            this.sinh.Click += new System.EventHandler(this.Definition2);
             // 
             // cosh
             // 
@@ -266,7 +266,7 @@
             this.cosh.TabIndex = 19;
             this.cosh.Text = "cosh(x)";
             this.cosh.UseVisualStyleBackColor = false;
-            this.cosh.Click += new System.EventHandler(this.cosh_Click);
+            this.cosh.Click += new System.EventHandler(this.Definition2);
             // 
             // tgh
             // 
@@ -277,7 +277,7 @@
             this.tgh.TabIndex = 20;
             this.tgh.Text = "tgh(x)";
             this.tgh.UseVisualStyleBackColor = false;
-            this.tgh.Click += new System.EventHandler(this.tgh_Click);
+            this.tgh.Click += new System.EventHandler(this.Definition2);
             // 
             // min
             // 
@@ -288,7 +288,7 @@
             this.min.TabIndex = 21;
             this.min.Text = "MIN";
             this.min.UseVisualStyleBackColor = false;
-            this.min.Click += new System.EventHandler(this.min_Click);
+            this.min.Click += new System.EventHandler(this.Definition);
             // 
             // max
             // 
@@ -299,7 +299,7 @@
             this.max.TabIndex = 22;
             this.max.Text = "MAX";
             this.max.UseVisualStyleBackColor = false;
-            this.max.Click += new System.EventHandler(this.max_Click);
+            this.max.Click += new System.EventHandler(this.Definition);
             // 
             // exponent
             // 
@@ -310,7 +310,7 @@
             this.exponent.TabIndex = 23;
             this.exponent.Text = "e^x";
             this.exponent.UseVisualStyleBackColor = false;
-            this.exponent.Click += new System.EventHandler(this.exponent_Click);
+            this.exponent.Click += new System.EventHandler(this.Definition2);
             // 
             // decad
             // 
@@ -321,7 +321,7 @@
             this.decad.TabIndex = 24;
             this.decad.Text = "10^x";
             this.decad.UseVisualStyleBackColor = false;
-            this.decad.Click += new System.EventHandler(this.decad_Click);
+            this.decad.Click += new System.EventHandler(this.Definition2);
             // 
             // radians
             // 

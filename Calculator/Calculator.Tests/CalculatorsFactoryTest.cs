@@ -10,7 +10,7 @@ namespace Calculator.Tests
     class CalculatorsFactoryTest
     {
         [TestCase("Addition", typeof(Addition))]
-        [TestCase("Subtraction", typeof(Subtraction))]
+        [TestCase("Subtruction", typeof(Subtraction))]
         [TestCase("Multiplication", typeof(Multiplication))]
         [TestCase("Division", typeof(Division))]
         [TestCase("power", typeof(power))]
